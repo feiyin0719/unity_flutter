@@ -1,0 +1,12 @@
+include ':unitylibrary'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  'flutter_module/.android/include_flutter.groovy'
+))
+include ':app'
+rootProject.name = "unitylib"
+
+include ':flutter_module'
+
+include ':flutter_module'
